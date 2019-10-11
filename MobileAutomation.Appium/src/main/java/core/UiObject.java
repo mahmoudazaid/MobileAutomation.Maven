@@ -1,6 +1,6 @@
 package core;
 
-import api.android.some.Android;
+import api.android.Android;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.Point;
 import org.openqa.selenium.WebElement;

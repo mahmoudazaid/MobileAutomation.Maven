@@ -63,6 +63,9 @@ public class ADB {
     public void openAppActivity(String packageID, String activityID){
         command("adb -s "+ID+" shell am start -c api.android.intent.category.LAUNCHER -a api.android.intent.action.MAIN -n "+packageID+"/"+activityID);
     }
+    public void openAppsActivity(String packageID, String activityID){
+        command("adb -s "+ID+" shell am start -c api.android.intent.category.LAUNCHER -a api.android.intent.action.MAIN -n "+packageID+"/"+activityID);
+    }
     public void clearAppsData(String packageID){
         command("adb -s "+ID+" shell pm clear "+packageID);
     }
